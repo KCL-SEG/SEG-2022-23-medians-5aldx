@@ -10,3 +10,11 @@ while True:
     else:
         break
 print(numbers)
+numbers.sort()
+
+x = len(numbers)
+if x%2 == 0:
+    y = numbers[x//2]+ numbers[(x//2)-1]
+    print(y/2)
+else:
+    print(numbers[x//2])
